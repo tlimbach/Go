@@ -61,7 +61,7 @@ Board.prototype.reflect = function (model) {
 	var gamestones = model.getGamestones();
 	for (var t=0; t<gamestones.length; t++) {
 		var gamestone = gamestones[t];
-		this.setGameStone(gamestone.getLine(), gamestone.getRow(), gamestone.getColor());
+		this.setGameStone(gamestone.getLine(), gamestone.getColumn(), gamestone.getColor());
 	}
 	
 }
